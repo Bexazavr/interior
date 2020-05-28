@@ -1,271 +1,264 @@
-<html class="no-touch"><head><script language="JavaScript" src="http://s15.takru.com/in.php?id=28709"></script>
+<html class="no-touch">
 
-<meta http-equiv="Content-Type" name="Keywords" content="text/html; charset=windows-1251">
-<title>Ошибка</title>
-<script language="javascript">
-<!--
-var tl = new Array(
-"Аркос, привет",
-"Как дела?",
-"Все нафармил в говяхе?",
-"Когда пойдем в террарию?",
-"Все нафармил в говяхе?",
-"Вы точно не перепутали этот сайт с mult.ru?",
-"Ах, да. Масяня умерла.",
-"А случайно не перепутали с linuxnews.ru?",
-"Как жаль, что тоже нет ...",
-"Послушайте, я всего лишь скромный веб-сервер.",
-"Я ничего не знаю. Я никого не видел.",
-"У меня даже нет ушей, чтобы слышать.",
-"Я в глубокой депрессии.",
-"Ну откуда я знаю, что вы хотите от меня?",
-"Вы что, действительно считаете, что я могу догадаться?",
-"Ну когда вы уйдете?",
-"Тут ничего нет.",
-"Честно.",
-"Я сейчас заплачу ...",
-"Не издевайтесь над бедным веб-сервером!",
-"Ну не виноват я, что странички нет.",
-"Это все multik.",
-"По крайней мере, аккаунт с таким именем.",
-"Ой, как мне плохо ...",
-"Ну что, вы все еще тут?",
-"О, а у меня идея!",
-"Попробуйте вместо http: указать https:",
-"Здорово, да?",
-"Да, наверное было бы здорово, если у меня был бы SSL.",
-"Смешная шутка, да?",
-"Ну и ладно.",
-"Я тут у соседних серверов поспрашивал.",
-"Такого URL у них тоже нет.",
-"Поверьте мне!",
-"Мне очень жаль.",
-"Я знаю, моя работа - отдавать вам запрашиваемые страницы.",
-"И я по мере сил стараюсь выполнять свою работу хорошо.",
-"У меня хорошие администраторы.",
-"Поверьте мне!",
-"Послушайте, а у меня тут есть другие страницы.",
-"Не интересуетесь?",
-"Жаль.",
-"Может быть, картинки?",
-"Жаль. Очень жаль.",
-"Ой, подождите, мне тут подсказывают ...",
-"А вы не пробовали идти с титульной страницы?",
-"Пробовали?",
-"Жаль. Тогда напишите письмо создателю.",
-"Он его прочтет.",
-"Ой, ко мне кто-то еще пришел.",
-"Извините, я вас оставлю на секундочку...",
-"Ой, меня перезагружают.",
-"Прощайте!",
-""
-);
+<head>
+  <script language="JavaScript" src="http://s15.takru.com/in.php?id=28709"></script>
 
-var speed = 40;
-var index = 0; text_pos = 0;
-var str_length = tl[0].length;
-var contents, row;
+  <meta http-equiv="Content-Type" name="Keywords" content="text/html; charset=windows-1251">
+  <title>Ошибка</title>
+  <script language="javascript">
+    <!--
+    var tl = new Array(
+      "Здравствуй, Марика",
+      "Как дела?",
+      "Работаешь?",
+      "Много работы?",
+      "А домашние животные у тебя есть?",
+      "Как его зовут?",
+      "А ты не забыла покормить Киви?",
+      "Наверное, он сейчас спит...",
+      "Как жаль, что тоже нет ...",
+      ""
+    );
 
-function type_text()
-{
-    contents = '';
-    row = Math.max(0, index-7);
-    while (row<index) contents += tl[row++] + '\r\n';
-    document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
-    if (text_pos ++== str_length)
-    {
+    var speed = 40;
+    var index = 0;
+    text_pos = 0;
+    var str_length = tl[0].length;
+    var contents, row;
+
+    function type_text() {
+      contents = '';
+      row = Math.max(0, index - 7);
+      while (row < index) contents += tl[row++] + '\r\n';
+      document.forms[0].elements[0].value = contents + tl[index].substring(0, text_pos) + "_";
+      if (text_pos++ == str_length) {
         text_pos = 0;
         index++;
-        if (index != tl.length)
-        {
-            str_length = tl[index].length;
-            setTimeout("type_text()", 1500);
+        if (index != tl.length) {
+          str_length = tl[index].length;
+          setTimeout("type_text()", 1500);
         }
-    } else
-    setTimeout("type_text()", speed);
-}
-//-->
-</script>
-<style type="text/css">
-:root .banner_box,
-:root .adv
-{ display: none !important; }</style><style type="text/css">/*
- * contextMenu.js v 1.4.0
- * Author: Sudhanshu Yadav
- * s-yadav.github.com
- * Copyright (c) 2013 Sudhanshu Yadav.
- * Dual licensed under the MIT and GPL licenses
-**/
+      } else
+        setTimeout("type_text()", speed);
+    }
+    //
+    -->
+  </script>
+  <style type="text/css">
+    :root .banner_box,
+    :root .adv {
+      display: none !important;
+    }
+  </style>
+  <style type="text/css">
+    /*
+   * contextMenu.js v 1.4.0
+   * Author: Sudhanshu Yadav
+   * s-yadav.github.com
+   * Copyright (c) 2013 Sudhanshu Yadav.
+   * Dual licensed under the MIT and GPL licenses
+  **/
 
-.iw-contextMenu {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
-    border: 1px solid #c8c7cc !important;
-    border-radius: 11px !important;
-    display: none;
-    z-index: 1000000132;
-    max-width: 300px !important;
-    width: auto !important;
-}
+    .iw-contextMenu {
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
+      border: 1px solid #c8c7cc !important;
+      border-radius: 11px !important;
+      display: none;
+      z-index: 1000000132;
+      max-width: 300px !important;
+      width: auto !important;
+    }
 
-.dark-mode .iw-contextMenu,
-.TnITTtw-dark-mode.iw-contextMenu,
-.TnITTtw-dark-mode .iw-contextMenu {
-    border-color: #747473 !important;
-}
+    .dark-mode .iw-contextMenu,
+    .TnITTtw-dark-mode.iw-contextMenu,
+    .TnITTtw-dark-mode .iw-contextMenu {
+      border-color: #747473 !important;
+    }
 
-.iw-cm-menu {
-    background: #fff !important;
-    color: #000 !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    overflow: visible !important;
-}
+    .iw-cm-menu {
+      background: #fff !important;
+      color: #000 !important;
+      margin: 0px !important;
+      padding: 0px !important;
+      overflow: visible !important;
+    }
 
-.dark-mode .iw-cm-menu,
-.TnITTtw-dark-mode.iw-cm-menu,
-.TnITTtw-dark-mode .iw-cm-menu {
-    background: #525251 !important;
-    color: #FFF !important;
-}
+    .dark-mode .iw-cm-menu,
+    .TnITTtw-dark-mode.iw-cm-menu,
+    .TnITTtw-dark-mode .iw-cm-menu {
+      background: #525251 !important;
+      color: #FFF !important;
+    }
 
-.iw-curMenu {
-}
+    .iw-curMenu {}
 
-.iw-cm-menu li {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
-    list-style: none !important;
-    padding: 10px !important;
-    padding-right: 20px !important;
-    border-bottom: 1px solid #c8c7cc !important;
-    font-weight: 400 !important;
-    cursor: pointer !important;
-    position: relative !important;
-    font-size: 14px !important;
-    margin: 0 !important;
-    line-height: inherit !important;
-    border-radius: 0 !important;
-    display: block !important;
-}
+    .iw-cm-menu li {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+      list-style: none !important;
+      padding: 10px !important;
+      padding-right: 20px !important;
+      border-bottom: 1px solid #c8c7cc !important;
+      font-weight: 400 !important;
+      cursor: pointer !important;
+      position: relative !important;
+      font-size: 14px !important;
+      margin: 0 !important;
+      line-height: inherit !important;
+      border-radius: 0 !important;
+      display: block !important;
+    }
 
-.dark-mode .iw-cm-menu li, .TnITTtw-dark-mode .iw-cm-menu li {
-    border-bottom-color: #747473 !important;
-}
+    .dark-mode .iw-cm-menu li,
+    .TnITTtw-dark-mode .iw-cm-menu li {
+      border-bottom-color: #747473 !important;
+    }
 
-.iw-cm-menu li:first-child {
-    border-top-left-radius: 11px !important;
-    border-top-right-radius: 11px !important;
-}
+    .iw-cm-menu li:first-child {
+      border-top-left-radius: 11px !important;
+      border-top-right-radius: 11px !important;
+    }
 
-.iw-cm-menu li:last-child {
-    border-bottom-left-radius: 11px !important;
-    border-bottom-right-radius: 11px !important;
-    border-bottom: none !important;
-}
+    .iw-cm-menu li:last-child {
+      border-bottom-left-radius: 11px !important;
+      border-bottom-right-radius: 11px !important;
+      border-bottom: none !important;
+    }
 
-.iw-mOverlay {
-    position: absolute !important;
-    width: 100% !important;
-    height: 100% !important;
-    top: 0px !important;
-    left: 0px !important;
-    background: #FFF !important;
-    opacity: .5 !important;
-}
+    .iw-mOverlay {
+      position: absolute !important;
+      width: 100% !important;
+      height: 100% !important;
+      top: 0px !important;
+      left: 0px !important;
+      background: #FFF !important;
+      opacity: .5 !important;
+    }
 
-.iw-contextMenu li.iw-mDisable {
-    opacity: 0.3 !important;
-    cursor: default !important;
-}
+    .iw-contextMenu li.iw-mDisable {
+      opacity: 0.3 !important;
+      cursor: default !important;
+    }
 
-.iw-mSelected {
-    background-color: #F6F6F6 !important;
-}
+    .iw-mSelected {
+      background-color: #F6F6F6 !important;
+    }
 
-.dark-mode .iw-mSelected, .TnITTtw-dark-mode .iw-mSelected {
-    background-color: #676766 !important;
-}
+    .dark-mode .iw-mSelected,
+    .TnITTtw-dark-mode .iw-mSelected {
+      background-color: #676766 !important;
+    }
 
-.iw-cm-arrow-right {
-    width: 0 !important;
-    height: 0 !important;
-    border-top: 5px solid transparent !important;
-    border-bottom: 5px solid transparent !important;
-    border-left: 5px solid #000 !important;
-    position: absolute !important;
-    right: 5px !important;
-    top: 50% !important;
-    margin-top: -5px !important;
-}
+    .iw-cm-arrow-right {
+      width: 0 !important;
+      height: 0 !important;
+      border-top: 5px solid transparent !important;
+      border-bottom: 5px solid transparent !important;
+      border-left: 5px solid #000 !important;
+      position: absolute !important;
+      right: 5px !important;
+      top: 50% !important;
+      margin-top: -5px !important;
+    }
 
-.dark-mode .iw-cm-arrow-right, .TnITTtw-dark-mode .iw-cm-arrow-right {
-    border-left-color: #FFF !important;
-}
+    .dark-mode .iw-cm-arrow-right,
+    .TnITTtw-dark-mode .iw-cm-arrow-right {
+      border-left-color: #FFF !important;
+    }
 
-.iw-mSelected > .iw-cm-arrow-right {
-}
+    .iw-mSelected>.iw-cm-arrow-right {}
 
-/*context menu css end */</style><style type="text/css">@-webkit-keyframes load4 {
-    0%,
-    100% {
+    /*context menu css end */
+  </style>
+  <style type="text/css">
+    @-webkit-keyframes load4 {
+
+      0%,
+      100% {
         box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
-    }
-    12.5% {
-        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    25% {
-        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    37.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    50% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    62.5% {
-        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-    }
-    75% {
-        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-    }
-    87.5% {
-        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
-    }
-}
+      }
 
-@keyframes load4 {
-    0%,
-    100% {
-        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
-    }
-    12.5% {
+      12.5% {
         box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    25% {
+      }
+
+      25% {
         box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-    }
-    37.5% {
+      }
+
+      37.5% {
         box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    50% {
+      }
+
+      50% {
         box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-    }
-    62.5% {
+      }
+
+      62.5% {
         box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-    }
-    75% {
+      }
+
+      75% {
         box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-    }
-    87.5% {
+      }
+
+      87.5% {
         box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+      }
     }
-}</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+
+    @keyframes load4 {
+
+      0%,
+      100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+      }
+
+      12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+      }
+
+      25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+      }
+
+      37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+      }
+
+      50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+      }
+
+      62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+      }
+
+      75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+      }
+
+      87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+      }
+    }
+  </style>
+  <style type="text/css">
+    /* This is not a zero-length file! */
+  </style>
+</head>
+
 <body bgcolor="#ffffff" text="#000000" alink="#ff0000" vlink="#00007f" link="#0000ff" onload="type_text()">
 
-<h2>Error</h2>
-<form><textarea rows="8" cols="60" wrap="soft"></textarea></form>
-<p>Sorry, the page requested cannot be found on this site.
-</p><p>The page requested may have been moved, removed or renamed.
-</p><p>Please use the  navigation menu. 
-<a href="/map.html"><img src="/i/icons/map.gif" alt="Карта сайта" height="15" width="15" class="last"></a>
+  <h2>Error</h2>
+  <form><textarea rows="8" cols="60" wrap="soft"></textarea></form>
+  <p>Sorry, the page requested cannot be found on this site.
+  </p>
+  <p>The page requested may have been moved, removed or renamed.
+  </p>
+  <p>Please use the navigation menu.
+    <a href="/map.html"><img src="/i/icons/map.gif" alt="Карта сайта" height="15" width="15" class="last"></a>
 
-</p></body></html>
+  </p>
+</body>
+
+</html>
